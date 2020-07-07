@@ -36,22 +36,18 @@
 				<div class="keywords" style="color:#cccccc;font-size:1px;">
 					Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site
 				</div>
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand">
 					<img src="img/la-chouette-agence.png" alt="paris web design logo agence web meilleure agence" height="40" />
 				</a>
 				<div class="keywords" style="color:#cccccc;font-size:1px;">
 					Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site
 				</div>
-			</div>
-			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="#formcontact">Contact</a>
-					</li>
-				</ul>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span>
+				</button>
 			</div>
 		</nav>
-</header>
+	</header>
 <!-- bloc-0 END -->
 
 <!-- bloc-1-presentation -->
@@ -192,7 +188,7 @@
 <!-- bloc-4-portfolio END -->
 
 <!-- bloc-5-cta -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
 	<div class="container bloc-lg">
 		<div class="row">
 			<h2 class="mg-md text-center tc-white">
@@ -203,9 +199,10 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <!-- bloc-5-cta END -->
-<div class="col-sm-6" id="formcontact">
+<section class="col-sm-6" id="formcontact">
+	<div class="bloc bg-presentation d-bloc">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
 						<label>
@@ -236,10 +233,12 @@
 					</button>
 				</form>
 		</div>
+	</section>
 
 <!-- Footer - bloc-8 -->
 <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
+		<div class="row">
 			<div class="col-sm-12">
 				<p class="text-center white">
 					La chouette agence - Agence web basée à Lyon.<br>
@@ -265,9 +264,7 @@
 							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
-					<div class="keywords" style="color:#F3976C;">
-						Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site
-					</div>
+				</div>
 			</div>
 		</div>
 	</div>
