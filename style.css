@@ -146,6 +146,7 @@ form
     font-size: 20px;
     width: 55%;
     margin:auto;
+    height: 140px;
 }
 .b-parallax {
     background-attachment: fixed;
