@@ -33,6 +33,7 @@
 	<header class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
+				<div class="heading">
 				<div class="keywords" style="color:#0F0F0F;font-size:1px;">
 					Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site,agence web paris,paris, site web design à paris
 				</div>
@@ -41,10 +42,23 @@
 				</a>
 				<div class="keywords" style="color:#0F0F0F;font-size:1px;">
 					Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site,agence web paris,paris, site web design à paris
-				</div>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span>
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
+			</div>
+		</div>
+			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+				<ul class="site-navigation nav navbar-nav">
+					<li>
+						<a href="index.html">Accueil</a>
+					</li>
+					<li>
+						<a href="#bloc-4-portfolio">Nos services</a>
+					</li>
+					<li>
+						<a href="#formcontact">Contactez-nous</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</header>
@@ -58,7 +72,7 @@
 			La chouette agence.
 		</h1>
 		<div class="text-center">
-			<a href="#formcontact" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine">Contact</a>
+			<a href="#formcontact" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
 		</div>
 	</article>
 </section>
@@ -91,7 +105,7 @@
 				<h3 class="mg-md text-center">
 					&nbsp;Stratégie
 				</h3>
-				<p class="text-center ">
+				<p class="text-center">
 					Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
 				</p>
 			</div>
@@ -202,41 +216,42 @@
 			</div>
 		</div>
 	</article>
+	<div class="col-sm-6" id="formcontact">
+		<div class="bloc d-bloc">
+			<h3 id="formtitle">Formulaire de Contact</h3>
+			<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<div class="form-group">
+					<label>
+						Nom
+					</label>
+					<input id="name" class="form-control" required />
+				</div>
+				<div class="form-group">
+						<label>
+						Adresse email
+					</label>
+					<input id="email" class="form-control" type="email" required />
+				</div>
+				<div class="form-group">
+					<label>
+						Comment nous avez-vous connu ?
+					</label>
+					<input class="form-control" type="email" required id="input_504" />
+				</div>
+				<div class="form-group">
+					<label>
+						Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+					</label>
+					<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+				</div> 
+				<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+						Envoyer
+				</button>
+			</form>
+		</div>
+	</div>
 </section>
 <!-- bloc-5-cta END -->
-<section class="col-sm-6" id="formcontact">
-	<div class="bloc bg-presentation d-bloc">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label>
-						<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-						Envoyer
-					</button>
-				</form>
-		</div>
-	</section>
 
 <!-- Footer - bloc-8 -->
 <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
@@ -271,13 +286,9 @@
 			</div>
 		</div>
 	</div>
-</footer>
-				
+</footer>				
 <!-- Footer - bloc-8 END -->
-
 </div>
 <!-- Principal conteneur END -->
-    
-
 </body>
 </html>
