@@ -60,7 +60,6 @@ a:hover
 .bloc-md {
     padding: 50px;
 }
-
 .bloc-sm {
     padding: 20px 50px;
 }
@@ -90,8 +89,8 @@ form
 #formcontact h3
 {
     font-size: 25px;
-    width: 350px;
-    margin: auto;
+    width: 100%;
+    text-align: center;
     margin-top: 20px;
 }
 
@@ -657,12 +656,15 @@ h1,
 h2,
 h3,
 p,
-label,
 .btn,
 a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+label
+{
+    color: #000000;
 }
 .hero-bloc-text {
     font-size: 38px;
@@ -720,11 +722,6 @@ h3
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
-}
-
-h1
-{
-    color: !important;
 }
 .icons
 {
@@ -835,7 +832,10 @@ h1
 {
     background-image: url("img/image-de-presentation.jpg");
 }
-
+#nav-toggle
+{
+    height: 50px;
+}
 @media (max-width: 360px)
 {
     .row h2
@@ -844,8 +844,14 @@ h1
         width: 100%;
         height: 210px;
     }
-    #formcontact{
+    #formcontact
+    {
         width: 100%;
+    }
+    #Namesmall
+    {
+        font-size:10px; 
+        line-height: 1px;
     }
 }
 
@@ -884,8 +890,13 @@ h1
     {
         width: 100%;
     }
+    .voffset
+    { 
+        height: 370px;
+        width: 100%;
+        font-size: 12px;
+    }
 }
-
 @media (max-width: 767px)
 {
     .page-container
@@ -900,6 +911,10 @@ h1
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
+    }
+    #bloc-5-cta h2
+    {
+        padding: auto;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -987,6 +1002,11 @@ h1
         float: left;
         margin-left: 10px;
     }
+    .icon-bar
+    {
+        float: right;
+        
+    }
     .bloc
     {
         padding-left: 0;
@@ -1039,7 +1059,12 @@ h1
     }
     form {
         padding: 5px;
-        width: 80%;
+        width: 100%;
+    }
+    #formcontact h3
+    {
+        padding-top: 20px;
+        font-size: 23px;
     }
     .close-lightbox
     {
