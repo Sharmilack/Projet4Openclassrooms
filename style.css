@@ -430,9 +430,12 @@ form
 .navbar-header
 {
     width: 100%;
+    color: #000000;
+}
+.heading
+{
     display: flex;
     flex-direction: column;
-    color: #000000;
 }
 #Namesmall
 {
@@ -827,14 +830,9 @@ h3
 {
     background-image: url("img/la-chouette-agence-banniere.jpg") ;
 }
-
 .bg-presentation
 {
     background-image: url("img/image-de-presentation.jpg");
-}
-#nav-toggle
-{
-    height: 50px;
 }
 @media (max-width: 360px)
 {
@@ -923,7 +921,6 @@ h3
     {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
     }
     .navbar.row
     {
@@ -932,12 +929,11 @@ h3
     }
     .site-navigation
     {
-        position: inherit;
+        position: relative;
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
     }
-
     #hero-bloc .navbar .nav
     {
         background: rgba(0, 0, 0, .8);
@@ -961,7 +957,7 @@ h3
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
     }
-    .navbar.row
+    .navbar .row
     {
         margin-left: 0;
         margin-right: 0;
@@ -973,15 +969,12 @@ h3
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-    .nav > li
+    .nav li
     {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .5);
         background: rgba(0, 0, 0, .7);
-        text-align: right;
-        width: 60%;
-        margin-right: 0;
-        float: right;
+        font-size: 16px;
     }
     .nav > li:hover
     {
@@ -994,18 +987,13 @@ h3
     }
     .nav-invert .navbar-header
     {
-        float: none;
+        float: right;
         width: 100%;
     }
     .nav-invert .navbar-toggle
     {
         float: left;
         margin-left: 10px;
-    }
-    .icon-bar
-    {
-        float: right;
-        
     }
     .bloc
     {
