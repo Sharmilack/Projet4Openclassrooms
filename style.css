@@ -7,7 +7,7 @@ body
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.navbar-toggler{display: block !important;}
+
 a,
 button
 {
@@ -427,9 +427,8 @@ form
     font-size: 25px;
     width: 100%;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px;;
 }
-
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -713,14 +712,16 @@ h4,
 h5,
 h6,
 p,
-label,
 .btn,
 a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
 }
-
+label
+{
+    color: #292929;
+}
 .container {
     max-width: 1000px;
 }
