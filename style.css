@@ -401,15 +401,17 @@ a:hover
 }
 #bloc-5-cta
 {
+    width: 100%;
     display: inline-block;
 }
 #formcontact
 {
-   width: 100%;
+   width: 80%;
    margin: auto;
+   float: none;
    margin-bottom: 80px;
    padding-bottom: 40px;
-   background-color:#f7d68f;
+   background-color:#d4d8d9;
 }
 #formcontact button
 {
@@ -430,8 +432,9 @@ form
 {
     font-size: 25px;
     width: 100%;
+    height: auto;
     text-align: center;
-    margin-top: 20px;;
+    padding-top: 20px;;
 }
 @media (min-width: 768px) {
     .site-navigation {
@@ -472,6 +475,7 @@ form
     .nav-center.mini-nav .navbar-toggle {
         float: none;
         margin: 10px auto 0;
+        margin-top: 50px;
     }
 }
 .nav > li > .dropdown a {
@@ -819,7 +823,6 @@ h4
     margin-bottom: 14px;
     margin-top: 24px;
 }
-
 .white
 {
     color: #000000!important;
@@ -995,8 +998,8 @@ h4
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1127,25 +1130,31 @@ h4
         width: 90%;
         margin: auto;
     }
+    #formcontact
+    {
+        width: 95%;
+    }
+    #secondtitle h3
+    {
+        width: 75%;
+    }
+    .row h2
+    {
+        width: 70%;
+    }
 }
-
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
-    .row
+    #secondtitle h3
     {
         width: 100%;
     }
     .row h2
     {
-        width: 80%;
-        margin: auto;
-    }
-    #secondtitle h3
-    {
-        width: 100%;
+        width: 75%;
     }
 }
 
